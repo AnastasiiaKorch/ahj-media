@@ -1,4 +1,4 @@
-import checkLocation from '../checkLocation.js';
+import checkLocation from '../checkLocation';
 
 describe('correct coordinates', () => {
   test('1', () => {

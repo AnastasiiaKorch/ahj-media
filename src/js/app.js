@@ -1,4 +1,4 @@
-import checkLocation from './checkLocation.js'
+import checkLocation from './checkLocation'
 
 function getDate() {
   const itemDate = new Date();
