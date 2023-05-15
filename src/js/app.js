@@ -1,4 +1,10 @@
-import checkLocation from './checkLocation'
+import checkLocation from './checkLocation';
+
+function formatDate(value) {
+  const returnValue = value < 10 ? `0${value}` : value;
+
+  return returnValue;
+}
 
 function getDate() {
   const itemDate = new Date();
@@ -11,12 +17,6 @@ function getDate() {
   const dateSet = `${date}.${month}.${year} ${hours}:${min}`;
 
   return dateSet;
-}
-
-function formatDate(value){
-  const returnValue = value < 10 ? `0${value}` : value;
-
-  return returnValue;
 }
 
 function getGeo() {
@@ -38,6 +38,21 @@ function getGeo() {
   }
 
   return message;
+}
+
+function createModal() {
+  const modal = document.createElement('div');
+
+  modal.className = 'modal';
+  modal.innerHTML = `<h3 class="modal-header">Oops...something went wrong:(</h3>
+    <p class="modal-message">Please give permission to use your geolocation, or enter the coordinates manually.</p>
+    <p class="modal-message">Latitude and longitude separated by commas please</p>
+    <input type"text" class="modal-input" placeholder="Separated by commas please..">
+    <div class="modal-buttons">
+      <button class="modal-ok button" type="button">Ok</button>
+      <button class="modal-cancel button" type="button">Cancel</button>
+    </div>`;
+  return modal;
 }
 
 class Messenger {
@@ -94,22 +109,6 @@ class Messenger {
 
     this.messages.insertAdjacentElement('afterbegin', message);
   }
-
-}
-
-function createModal() {
-  const modal = document.createElement('div');
-
-  modal.className = 'modal';
-  modal.innerHTML = `<h3 class="modal-header">Oops...something went wrong:(</h3>
-    <p class="modal-message">Please give permission to use your geolocation, or enter the coordinates manually.</p>
-    <p class="modal-message">Latitude and longitude separated by commas please</p>
-    <input type"text" class="modal-input" placeholder="Separated by commas please..">
-    <div class="modal-buttons">
-      <button class="modal-ok button" type="button">Ok</button>
-      <button class="modal-cancel button" type="button">Cancel</button>
-    </div>`;
-  return modal;
 }
 
 const messenger = new Messenger();
@@ -122,4 +121,4 @@ inputMessage.addEventListener('keypress', (event) => {
     messenger.newMessage(text);
     inputMessage.value = '';
   }
-})
+});
