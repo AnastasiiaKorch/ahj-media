@@ -1,0 +1,100 @@
+body {
+  background-color: grey;
+}
+.container {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.messenger {
+  color: grey;
+}
+.header {
+  width: 50%;
+  height: 35px;
+  background-color: pink;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.button {
+  display: inline-block;
+  background-color: grey;
+  border: none;
+  border-radius: 50%;
+  color: grey;
+}
+.input-content {
+  height: 30px;
+  width: 600px;
+  margin-left: 8px;
+  border: 2px solid pink;
+  font-size: 14px;
+  color: grey;
+  font-weight: bold;
+  margin-top: 130px;
+}
+.input-form {
+  height: 200px;
+}
+
+.message-date {
+  margin-top: 2px;
+  float: right;
+}
+
+.message {
+  background-color: white;
+
+}
+
+.modal {
+  position: relative;
+  background-color: pink;
+  color: grey;
+  border: 2px solid grey;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -220px;
+  padding-left: 4px;
+  border-radius: 10px;
+}
+.modal-cancel {
+  color: grey;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 50%;
+}
+.modal-ok {
+  margin-left: 4px;
+  color: grey;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 50%;
+}
+.modal-input {
+  width: 90%;
+  height: 20px;
+  border: 2px solid grey;
+  margin-bottom: 4px;
+}
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.modal-header {
+  background-color: white;
+}
+
+.message-item{
+  margin-top: 2px;
+}

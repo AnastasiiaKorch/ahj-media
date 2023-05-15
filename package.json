@@ -1,0 +1,46 @@
+{
+  "name": "ahj-animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint . --fix",
+    "test": "jest",
+    "coverage": "jest --testPathPattern=./src/ --coverage",
+    "test_2": "jest --testPathPattern=./src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiiaKorch/ahj-animation.git"
+  },
+  "author": "AnastasiiaKorch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnastasiiaKorch/ahj-animation/issues"
+  },
+  "homepage": "https://github.com/AnastasiiaKorch/ahj-animation#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.4.3",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.4.3",
+    "mini-css-extract-plugin": "^2.7.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "core-js": "^3.28.0",
+    "jest-environment-jsdom": "^29.4.3"
+  }
+}

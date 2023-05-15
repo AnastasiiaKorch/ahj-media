@@ -1,0 +1,42 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "no-restricted-syntax": [
+      "error",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "no-undef": [
+      "off"
+    ],
+    "class-methods-use-this": [
+      "off"
+    ],
+    "no-unused-expressions": [
+      "off"
+    ],
+    "no-unused-vars": [
+      "off"
+    ],
+    "import/no-extraneous-dependencies": [
+      "warn"
+    ],
+    "no-new": [
+      "warn"
+    ],
+    "no-param-reassign": [
+      "warn"
+    ],
+    "guard-for-in": [
+      "warn"
+    ],
+    "no-shadow": [
+      "warn"
+    ]
+  }
+}
